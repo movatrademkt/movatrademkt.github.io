@@ -1,0 +1,36 @@
+.result{
+    text-align: center;
+    
+}
+
+#formulario >  table > tbody  > tr >  td:nth-child(1) {
+    width: 40%;    
+    }
+
+    #formulario >  table > tbody  > tr >  td:nth-child(2) {
+        width: 30%;
+        }
+        #formulario >  table > tbody  > tr >  td:nth-child(3) {
+            width: 30%;
+            }
+
+
+
+
+.table-striped tbody tr:nth-of-type(odd), tr#Cuidar_Mais\ I, tr#Bolsa, tr#Proteção_II,tr#Funeral{
+    background-color: #007bff54;
+}
+
+
+
+
+.invalid{
+background-color: red;
+border-color: red;
+
+}
+.valid {background-color: green;
+
+    border-color:green}
+
+  

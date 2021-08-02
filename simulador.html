@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Simulador</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.0/js/bootstrap.min.js" integrity="sha512-DvAGmZf/QoXd7PYkS8wCU5r1z2vMlX5LHTbpJGiSHR2r7MKzlEAZ+vKQmZB2huxTUX+N1W1hPuu7oeXSFAfLag==" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha512-GLR4EA4wYjbISMSMYpUbHL1qTZNa575EQ4JIQJbrKqCJFPMZrw5umiBQrPH3orULt0NbKcuZcBis8KJwVI/MLQ==" crossorigin="anonymous">
+        <script src="app.js"></script>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+
+    
+        <!-- Page Content -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h4>Insira suas vendas abaixo para iniciar a simulação:</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div id="formulario" style="background-color:#007bff5c;">
+                      
+                    </div>
+                </div>
+    
+                <div class="col-md-6">
+                    <table class="table table-sm" style="background-color:#e9ff074a;">
+                        <thead>
+                            <tr>
+                                <td style="width: 30%;"></td>
+                                <td>Quantidade de Vendas pagas neste mês</td>
+                                <td>Remuneração total neste mês</td>
+    
+                            </tr>
+    
+                        </thead>
+    
+                        <tr>
+                            <td>Venda Mensais</td>
+                            <td class="mensais soma-vendas text-center"></td>
+                            <td class="mensais soma-remuneracao text-right"></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Venda Saúde</td>
+                            <td class="saUde soma-vendas text-center"></td>
+                            <td class="saUde soma-remuneracao text-right"></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                        <tfoot>
+                            <tr>
+                                <th>Total este mês</th>
+                                <th class="total soma-vendas text-center"></th>
+                                <th class="total soma-remuneracao text-right"></th>
+                                <th></th>
+                            </tr>
+    
+                        </tfoot>
+    
+                    </table>
+    
+    
+                    <table class="table table-sm mt-5" style="background-color:#e9ff074a;">
+                        <thead>
+                            <tr>
+                                <th colspan="2">Qual é a média de cancelamento da sua loja?</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Cancelamento Mensais</td>
+                                <td>
+                                    <div class="input-group">
+                                        <input type="number" class="form-control" id="cancelamentoMensais" placeholder="" value="3" min="0" required="">
+                                        <div class="input-group-apend">
+                                            <div class="input-group-text">%</div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Cancelamento Saúde</td>
+                                <td> <div class="input-group">
+                                    <input type="number" class="form-control" id="cancelamentoSaude" placeholder="" value="7" min="0" required="">
+                                    <div class="input-group-apend">
+                                        <div class="input-group-text">%</div>
+                                    </div>
+                                </div></td>
+                            </tr>
+    
+                        </tbody>
+                        <tfoot>
+                            
+                            <tr>
+                                <th colspan="2">Fique atento aos percentual de cancelamento da sua loja, isso impacta na sua comissão!</th>
+                            </tr>
+                        </tfoot>
+                    </table>
+    
+    
+    
+                    <table class="table table-sm mt-5" style="background-color:#28a74580;">
+                        <thead>
+                            <tr>
+                                <th colspan="2"><h5>Mantendo essa média de vendas durante <select id="cboMeses">
+                                    <option value="3">3 meses</option>
+                                    <option value="6" selected="">6 meses</option>
+                                    <option value="9">9 meses</option>
+                                    <option value="12">1 ano</option>
+                                </select> você pode ganhar até:</h5></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Mensais
+                                </td>
+                                <td id="projecaoMensais"></td>
+                            </tr>
+                            <tr>
+                                <td>Saúde
+                                </td>
+                                <td id="projecaoSaude"></td>
+                            </tr>
+    
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td> Total da sua carteira
+                                </td>
+                                <th id="projecaoTotal"></th>
+                            </tr>
+                        </tfoot>
+                    </table>
+    
+                </div>
+    
+            </div>
+    
+    
+        </div>
+    
+    
+    <script>
+        $(function () {
+            init();
+    
+    
+    
+    
+    
+        });
+    
+    
+    </script>
+    
+    </body>
+
+
+</html>
