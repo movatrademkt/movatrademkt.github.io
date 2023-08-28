@@ -1,3 +1,0 @@
-(function(){var loadHandler=window['sl_{3D654575-D837-4978-9097-062F383B19C5}'];loadHandler&&loadHandler(0, '<div id="spr0_14e88de"><div id="spr1_14e88de" class="kern slide"><img id="img2_14e88de" src="data/img2.jpg" width="960px" height="540px" alt="" style="left:0px;top:0px;"/></div><div id="spr2_14e88de" class="kern slide"><div id="spr3_14e88de"><img id="img0_14e88de" src="data/img0.jpg" width="960" height="540" alt="Tela de celular com texto preto sobre fundo branco\
-\
-Descrição gerada automaticamente com confiança média"/></div><div id="spr4_14e88de" style="left:97.08px;top:133.678px;"><img id="img1_14e88de" src="data/img1.png" width="979" height="314" alt="" style="left:0.25px;top:431.159px;"/></div></div></div>');})();
