@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest identifier="n9czYrrBAR5Ft" xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2" xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:lom="http://www.imsglobal.org/xsd/imsmd_rootv1p2p1" xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2 imscp_rootv1p1p2.xsd http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd">
+<manifest identifier="l5OjBF1PFRbFy" xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2" xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:lom="http://www.imsglobal.org/xsd/imsmd_rootv1p2p1" xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2 imscp_rootv1p1p2.xsd http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd">
 <metadata>
 <schema>ADL SCORM</schema>
 <schemaversion>1.2</schemaversion>
 <lom:lom>
 <lom:general>
 <lom:title>
-<lom:langstring>ProtFinPalmeiras</lom:langstring>
+<lom:langstring>GE</lom:langstring>
 </lom:title>
 </lom:general>
 <lom:educational>
@@ -16,11 +16,11 @@
 </lom:educational>
 </lom:lom>
 </metadata>
-<organizations default="protfinpalmeiras_organization">
-<organization identifier="protfinpalmeiras_organization">
-<title>ProtFinPalmeiras</title>
-<item identifier="98829720-EEA3-4A9E-B312-97FEFF4518EE" identifierref="resource">
-<title>Proteção Financeira TOP</title>
+<organizations default="ge_organization">
+<organization identifier="ge_organization">
+<title>GE</title>
+<item identifier="6E8A8DD6-11BC-4F58-89A6-E2EFDA6DD7DC" identifierref="resource">
+<title>GE</title>
 </item>
 </organization>
 </organizations>
@@ -31,6 +31,7 @@
 <file href="res/data/slide1.js"/>
 <file href="res/data/slide1.css"/>
 <file href="res/data.local-only/slide1.js"/>
+<file href="res/data/sound1.mp3"/>
 <file href="res/data/slide2.js"/>
 <file href="res/data/slide2.css"/>
 <file href="res/data.local-only/slide2.js"/>
@@ -46,6 +47,7 @@
 <file href="res/data/slide6.js"/>
 <file href="res/data/slide6.css"/>
 <file href="res/data.local-only/slide6.js"/>
+<file href="res/data/sound2.mp3"/>
 <file href="res/data/slide7.js"/>
 <file href="res/data/slide7.css"/>
 <file href="res/data.local-only/slide7.js"/>
@@ -55,6 +57,9 @@
 <file href="res/data/slide9.js"/>
 <file href="res/data/slide9.css"/>
 <file href="res/data.local-only/slide9.js"/>
+<file href="res/data/sound3.mp3"/>
+<file href="res/data/sound4.mp3"/>
+<file href="res/data/sound5.mp3"/>
 <file href="res/data/slide10.js"/>
 <file href="res/data/slide10.css"/>
 <file href="res/data.local-only/slide10.js"/>
@@ -152,6 +157,10 @@
 <file href="res/data/favicon.ico"/>
 <file href="res/data/fnt0.woff"/>
 <file href="res/data/fnt1.woff"/>
+<file href="res/data/fnt10.woff"/>
+<file href="res/data/fnt11.woff"/>
+<file href="res/data/fnt12.woff"/>
+<file href="res/data/fnt13.woff"/>
 <file href="res/data/fnt2.woff"/>
 <file href="res/data/fnt3.woff"/>
 <file href="res/data/fnt4.woff"/>
@@ -159,6 +168,7 @@
 <file href="res/data/fnt6.woff"/>
 <file href="res/data/fnt7.woff"/>
 <file href="res/data/fnt8.woff"/>
+<file href="res/data/fnt9.woff"/>
 <file href="res/data/html5-unsupported.html"/>
 <file href="res/data/html5.png"/>
 <file href="res/data/img0.jpg"/>
@@ -184,11 +194,11 @@
 <file href="res/data/img27.png"/>
 <file href="res/data/img28.png"/>
 <file href="res/data/img29.png"/>
-<file href="res/data/img3.jpg"/>
-<file href="res/data/img30.png"/>
+<file href="res/data/img3.png"/>
+<file href="res/data/img30.jpg"/>
 <file href="res/data/img31.png"/>
-<file href="res/data/img32.png"/>
-<file href="res/data/img33.png"/>
+<file href="res/data/img32.jpg"/>
+<file href="res/data/img33.jpg"/>
 <file href="res/data/img34.png"/>
 <file href="res/data/img35.png"/>
 <file href="res/data/img36.png"/>
@@ -201,7 +211,7 @@
 <file href="res/data/img42.png"/>
 <file href="res/data/img43.png"/>
 <file href="res/data/img44.png"/>
-<file href="res/data/img45.jpg"/>
+<file href="res/data/img45.png"/>
 <file href="res/data/img46.png"/>
 <file href="res/data/img47.png"/>
 <file href="res/data/img48.png"/>
@@ -213,39 +223,42 @@
 <file href="res/data/img53.png"/>
 <file href="res/data/img54.png"/>
 <file href="res/data/img55.png"/>
-<file href="res/data/img56.png"/>
+<file href="res/data/img56.jpg"/>
 <file href="res/data/img57.png"/>
 <file href="res/data/img58.png"/>
-<file href="res/data/img59.png"/>
-<file href="res/data/img6.png"/>
+<file href="res/data/img59.jpg"/>
+<file href="res/data/img6.jpg"/>
 <file href="res/data/img60.png"/>
 <file href="res/data/img61.png"/>
 <file href="res/data/img62.png"/>
 <file href="res/data/img63.png"/>
-<file href="res/data/img64.jpg"/>
+<file href="res/data/img64.png"/>
 <file href="res/data/img65.png"/>
 <file href="res/data/img66.png"/>
 <file href="res/data/img67.png"/>
 <file href="res/data/img68.png"/>
 <file href="res/data/img69.png"/>
-<file href="res/data/img7.jpg"/>
+<file href="res/data/img7.png"/>
 <file href="res/data/img70.png"/>
-<file href="res/data/img71.jpg"/>
+<file href="res/data/img71.png"/>
 <file href="res/data/img72.png"/>
-<file href="res/data/img73.png"/>
-<file href="res/data/img74.png"/>
-<file href="res/data/img75.png"/>
+<file href="res/data/img73.jpg"/>
+<file href="res/data/img74.jpg"/>
+<file href="res/data/img75.jpg"/>
 <file href="res/data/img76.png"/>
 <file href="res/data/img77.png"/>
 <file href="res/data/img78.png"/>
-<file href="res/data/img79.jpg"/>
-<file href="res/data/img8.jpg"/>
+<file href="res/data/img79.png"/>
+<file href="res/data/img8.png"/>
 <file href="res/data/img80.png"/>
-<file href="res/data/img81.png"/>
+<file href="res/data/img81.jpg"/>
 <file href="res/data/img82.jpg"/>
 <file href="res/data/img83.png"/>
 <file href="res/data/img84.png"/>
-<file href="res/data/img9.png"/>
+<file href="res/data/img85.jpg"/>
+<file href="res/data/img86.png"/>
+<file href="res/data/img87.png"/>
+<file href="res/data/img9.jpg"/>
 </resource>
 </resources>
 </manifest>
