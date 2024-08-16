@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagamento - Axa</title>
+    <title>Pagamento - Lojas Pernambucanas</title>
     <link rel="stylesheet" href="style-pagamento.css">
 </head>
 
@@ -14,8 +14,8 @@
             <img src="https://logodownload.org/wp-content/uploads/2014/07/pernambucanas-logo.png" alt="Lojas Pernambucanas">
         </div>
         <div class="progress-bar">
-            <div class="step">Cliente</div>
-            <div class="step">Plano</div>
+        
+            <div class="step completed">Plano</div>
             <div class="step completed">Pagamento</div>
             <div class="step">Fim</div>
         </div>
@@ -24,28 +24,36 @@
     <main>
         <div class="container">
             <h1>Ótima Escolha!</h1>
-            <p class="subtitle">Finalize seu pagamento para garantir a proteção do seu produto.</p>
-            
-            <div class="payment-options">
-                <div class="payment-option selected">
-                    <img src="https://cdn-icons-png.flaticon.com/512/2695/2695969.png" alt="Cartão Pernambucanas">
-                    <h2>Cartão Pernambucanas</h2>
-                </div>
-                <div class="payment-option">
-                    <img src="https://cdn-icons-png.flaticon.com/512/4021/4021708.png">
-                    <h2>Cartão de Crédito</h2>
-                </div>
-                <div class="payment-option">
-                    <img src="https://cdn-icons-png.flaticon.com/512/4021/4021708.png" alt="Cartão de Débito">
-                    <h2>Cartão de Débito</h2>
-                </div>
-                <div class="payment-option">
-                    <img src="https://cdn.icon-icons.com/icons2/3245/PNG/512/pix_icon_198027.png" alt="PIX">
-                    <h2>PIX</h2>
-                </div>
+            <p class="subtitle">Finalize seu pagamento para garantir a proteção do seu produto com seu Cartão Pernambucanas.</p>
+
+            <div class="payment-option" id="card-option">
+                <img src="cartaopnb.png" alt="Cartão Pernambucanas">
+                <h2>Cartão Pernambucanas</h2>
             </div>
-            
-            <form action="confirmacao.html" method="post" class="payment-form">
+
+            <form action="fim.html" method="post" class="payment-form" id="payment-form">
+                <fieldset>
+                    <legend>Dados do Cartão</legend>
+                    <div class="form-group">
+                        <label for="card-number">Número do Cartão</label>
+                        <input type="text" id="card-number" name="card-number" placeholder="1234 5678 9012 3456" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="card-holder">Nome no Cartão</label>
+                            <input type="text" id="card-holder" name="card-holder" placeholder="Nome Completo" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="expiry-date">Validade</label>
+                            <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/AA" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="cvv">CVV</label>
+                            <input type="text" id="cvv" name="cvv" placeholder="123" required>
+                        </div>
+                    </div>
+                </fieldset>
+
                 <fieldset>
                     <legend>Parcelamento</legend>
                     <div class="form-group">
@@ -59,9 +67,8 @@
                     </div>
                 </fieldset>
 
-                <div class="form-actions"> 
-    			<a href="final.html" class="btn btn-primary no-underline">Pagar</a>
-             
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary">Pagar</button>
                     <button type="button" class="btn btn-secondary">Voltar</button>
                 </div>
             </form>
@@ -71,6 +78,12 @@
     <footer>
         <p>Precisa de ajuda? Contate nosso suporte pelo telefone (XX) XXXX-XXXX</p>
     </footer>
+
+    <script>
+        document.getElementById('card-option').addEventListener('click', function() {
+            document.getElementById('payment-form').style.display = 'block';
+        });
+    </script>
 </body>
 
 </html>

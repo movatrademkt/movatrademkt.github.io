@@ -1,21 +1,28 @@
-document.addEventListener("DOMContentLoaded", function() {
-    // Personalizar título com o nome do usuário (exemplo)
-    const nomeUsuario = "João"; // Esse valor pode vir de uma fonte dinâmica
-    const titulo = document.getElementById("titulo");
-    titulo.textContent = `Estamos quase lá, ${nomeUsuario}!`;
+// Get the modal
+var modal = document.getElementById("modal-details");
 
-    // Validação do formulário
-    const formulario = document.getElementById("formulario-cadastro");
-    const campoSexo = document.getElementById("sexo");
-    const btnContinuar = document.getElementById("btn-continuar");
+// Get the link that opens the modal
+var detailsLink = document.querySelectorAll(".details-link");
 
-    formulario.addEventListener("submit", function(event) {
-        if (campoSexo.value === "") {
-            event.preventDefault(); // Impede o envio do formulário
-            alert("Por favor, selecione o seu sexo antes de continuar.");
-        } else {
-            btnContinuar.disabled = true; // Desativa o botão para evitar múltiplos cliques
-            btnContinuar.textContent = "Processando...";
-        }
-    });
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the link, open the modal
+detailsLink.forEach(function(link) {
+  link.onclick = function(event) {
+    event.preventDefault();
+    modal.style.display = "block";
+  };
 });
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}

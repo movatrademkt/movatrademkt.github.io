@@ -1,3 +1,4 @@
+/* Estilos Gerais */
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +7,9 @@
 
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(#f4f4f4 10%, transparent), url('https://digitalsaude.net/wp-content/uploads/2023/05/Foto-Blog-Plano-de-Saude-Familia-1500x736.png') no-repeat center;
+    background: linear-gradient(to top, #003087, rgba(0, 0, 0, 0.2)),
+        url("https://digitalsaude.net/wp-content/uploads/2023/05/Foto-Blog-Plano-de-Saude-Familia-1500x736.png")
+            no-repeat center;
     background-size: cover;
     color: #333;
     line-height: 1.6;
@@ -29,24 +32,25 @@ header {
     align-items: center;
     margin-top: 20px;
     padding: 10px 0;
-    gap: 20px; /* Espaçamento entre os itens */
+    gap: 20px;
 }
 
 .progress-bar .step {
-    padding: 10px 20px; /* Aumenta o padding para dar mais espaço interno */
+    padding: 10px 20px;
     border-radius: 5px;
-    background-color: #f7c813; /* Amarelo Pernambucanas */
+    background-color: #f7c813;
     flex: 1;
     text-align: center;
-    color: #003087; /* Azul Pernambucanas */
+    color: #003087;
     font-weight: bold;
 }
 
 .progress-bar .completed {
-    background-color: #003087; /* Azul Pernambucanas */
+    background-color: #003087;
     color: white;
 }
 
+/* Conteúdo Principal */
 main .container {
     max-width: 600px;
     margin: 40px auto;
@@ -54,12 +58,15 @@ main .container {
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 h1 {
+    font-size: 2em;
     text-align: center;
     margin-bottom: 20px;
-    color: #003087; /* Azul Pernambucanas */
+    color: #003087;
+    font-weight: bold;
 }
 
 .subtitle {
@@ -68,106 +75,116 @@ h1 {
     color: #777;
 }
 
-.payment-options {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom: 30px;
-}
-
 .payment-option {
-    background-color: #f0f8ff;
-    border: 2px solid #003087;
-    border-radius: 10px;
-    padding: 20px;
-    text-align: center;
-    width: calc(50% - 10px); /* Ajuste para caber 2 por linha */
-    cursor: pointer;
-}
-
-.payment-option.selected {
     background-color: #f7c813;
-    border: 2px solid #e6b400;
+    color: #003087;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
 }
 
 .payment-option img {
-    width: 50px;
+    width: 150px;
     margin-bottom: 10px;
 }
 
 .payment-option h2 {
-    margin: 10px 0 0 0;
-    color: #003087;
-    font-size: 1em;
+    margin-top: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
 }
 
-.payment-form fieldset {
-    border: none;
+.payment-form {
+    display: none; /* Campos ocultos até que o usuário clique no quadrado amarelo */
+    flex-direction: column;
+    margin-top: 20px;
+    text-align: left; /* Alinhamento à esquerda dos campos */
+}
+
+fieldset {
     margin-bottom: 20px;
+    border: none;
 }
 
-.payment-form legend {
+legend {
     font-size: 1.5em;
     margin-bottom: 10px;
     color: #003087;
+    text-align: left;
 }
 
-.payment-form .form-group {
+.form-group {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 15px;
 }
 
-.payment-form .form-group label {
-    display: block;
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.form-group label {
     margin-bottom: 5px;
     font-weight: bold;
     color: #333;
+    text-align: left;
 }
 
-.payment-form .form-group select {
-    width: 100%;
+.form-group input,
+.form-group select {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 1em;
+    width: 100%; /* Assegura que os campos usem toda a largura disponível */
 }
 
-.payment-form .form-actions {
-    text-align: center;
+.form-group input::placeholder {
+    color: #999;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: space-between;
     margin-top: 20px;
 }
 
-.btn-primary {
-    background-color: #f7c813; /* Amarelo Pernambucanas */
-    color: #003087; /* Azul Pernambucanas */
-    border: none;
+.btn {
     padding: 10px 20px;
+    font-size: 1.1em;
+    border: none;
     border-radius: 5px;
     cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.btn-primary {
+    background-color: #f7c813;
+    color: #003087;
     font-weight: bold;
-    font-size: 1.1em;
-    margin-right: 10px;
 }
 
 .btn-primary:hover {
-    background-color: #e6b400; /* Amarelo mais escuro para hover */
+    background-color: #e6b400;
 }
 
 .btn-secondary {
     background-color: #e0e0e0;
     color: #333;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
     font-weight: bold;
-    font-size: 1.1em;
 }
 
 .btn-secondary:hover {
     background-color: #c7c7c7;
 }
 
+/* Rodapé */
 footer {
     text-align: center;
     padding: 20px;
@@ -183,23 +200,12 @@ footer p {
 
 /* Responsividade */
 @media (max-width: 768px) {
-    .payment-options {
+    .form-row {
         flex-direction: column;
+        gap: 10px;
     }
-    .payment-option {
-        width: 100%; /* Ocupa 100% da largura em telas menores */
-    }
-    .payment-form .form-group {
-        margin-bottom: 10px;
-    }
-    .btn-primary {
+
+    .btn {
         width: 100%;
-        padding: 15px;
-        margin-right: 0;
-        margin-bottom: 10px;
-    }
-    .btn-secondary {
-        width: 100%;
-        padding: 15px;
     }
 }
