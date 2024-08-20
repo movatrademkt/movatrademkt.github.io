@@ -6,13 +6,13 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(to top, #003087, rgba(0, 0, 0, 0.2)),
-        url("https://digitalsaude.net/wp-content/uploads/2023/05/Foto-Blog-Plano-de-Saude-Familia-1500x736.png")
-            no-repeat center;
-    background-size: cover;
-    color: #333;
-    line-height: 1.6;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to top, #003087, rgba(0, 0, 0, 0.2)),
+    url("https://digitalsaude.net/wp-content/uploads/2023/05/Foto-Blog-Plano-de-Saude-Familia-1500x736.png")
+      no-repeat center;
+  background-size: cover;
+  color: #333;
+  line-height: 1.6;
 }
 
 header {
@@ -32,25 +32,24 @@ header {
     align-items: center;
     margin-top: 20px;
     padding: 10px 0;
-    gap: 20px;
+    gap: 20px; /* Espaçamento entre os itens */
 }
 
 .progress-bar .step {
-    padding: 10px 20px;
+    padding: 10px 20px; /* Aumenta o padding para dar mais espaço interno */
     border-radius: 5px;
-    background-color: #f7c813;
+    background-color: #f7c813; /* Amarelo Pernambucanas */
     flex: 1;
     text-align: center;
-    color: #003087;
+    color: #003087; /* Azul Pernambucanas */
     font-weight: bold;
 }
 
 .progress-bar .completed {
-    background-color: #003087;
+    background-color: #003087; /* Azul Pernambucanas */
     color: white;
 }
 
-/* Conteúdo Principal */
 main .container {
     max-width: 800px;
     margin: 40px auto;
@@ -62,17 +61,13 @@ main .container {
 }
 
 h1 {
-    font-size: 2em;
-    text-align: center;
+    color: #003087; /* Azul Pernambucanas */
     margin-bottom: 20px;
-    color: #003087;
-    font-weight: bold;
 }
 
 .subtitle {
-    text-align: center;
-    margin-bottom: 30px;
     color: #777;
+    margin-bottom: 30px;
 }
 
 .summary-card {
@@ -93,39 +88,67 @@ h1 {
 }
 
 .support-info {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
     text-align: left;
-    margin-top: 20px;
 }
 
 .support-info h3 {
     color: #003087;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .support-info ul {
-    list-style: none;
+    list-style-type: none;
     padding-left: 0;
     margin-bottom: 20px;
-    color: #333;
 }
 
 .support-info ul li {
     margin-bottom: 10px;
-  margin-left: 20px;
+    font-size: 1.1em;
+    color: #555;
 }
 
-.details-link {
-    color: #003087;
-    text-decoration: underline;
+.form-actions {
+    margin-top: 20px;
+}
+
+.btn-primary {
+    background-color: #f7c813; /* Amarelo Pernambucanas */
+    color: #003087; /* Azul Pernambucanas */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
     font-weight: bold;
+    font-size: 1.1em;
+    margin-right: 10px;
 }
 
-.details-link:hover {
-    color: #002070;
+.btn-primary:hover {
+    background-color: #e6b400; /* Amarelo mais escuro para hover */
+}
+
+.btn-secondary {
+    background-color: #e0e0e0;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.btn-secondary:hover {
+    background-color: #c7c7c7;
 }
 
 footer {
-    text-align: left;
+    text-align: center;
     padding: 20px;
     background-color: #ffffff;
     color: #777;
@@ -137,23 +160,9 @@ footer p {
     font-size: 0.9em;
 }
 
-.legal {
-    font-size: 0.75em;
-    color: #777;
-    text-align: left;
-    margin-top: 20px;
-}
-
 /* Responsividade */
 @media (max-width: 768px) {
-    .summary-card,
-    .support-info {
-        text-align: center;
+    body {
+        background: #f4f4f4; 
     }
-    footer p {
-        text-align: center;
-    }
-    .legal {
-        text-align: center;
-    }
-}
+   

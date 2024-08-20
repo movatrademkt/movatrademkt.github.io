@@ -52,7 +52,7 @@ header {
 
 /* Conteúdo Principal */
 main .container {
-    max-width: 600px;
+    max-width: 800px;
     margin: 40px auto;
     padding: 20px;
     background-color: #ffffff;
@@ -87,7 +87,7 @@ h1 {
 }
 
 .payment-option img {
-    width: 150px;
+    width: 50px;
     margin-bottom: 10px;
 }
 
@@ -98,7 +98,7 @@ h1 {
 }
 
 .payment-form {
-    display: none; /* Campos ocultos até que o usuário clique no quadrado amarelo */
+    
     flex-direction: column;
     margin-top: 20px;
     text-align: left; /* Alinhamento à esquerda dos campos */
@@ -164,24 +164,41 @@ legend {
     text-decoration: none;
 }
 
+.btn {
+  padding: 10px 20px;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+}
+
 .btn-primary {
-    background-color: #f7c813;
-    color: #003087;
-    font-weight: bold;
+  background-color: #f7c813;
+  color: #003087;
+  font-weight: bold;
 }
 
 .btn-primary:hover {
-    background-color: #e6b400;
+  background-color: #e6b400;
+  transform: scale(1.05);
+  transition: transform 0.2s ease-in-out;
 }
 
 .btn-secondary {
-    background-color: #e0e0e0;
-    color: #333;
-    font-weight: bold;
+  background-color: #e0e0e0;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.2em;
 }
 
 .btn-secondary:hover {
-    background-color: #c7c7c7;
+  background-color: #c7c7c7;
 }
 
 /* Rodapé */

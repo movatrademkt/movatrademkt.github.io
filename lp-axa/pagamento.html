@@ -2,88 +2,91 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagamento - Lojas Pernambucanas</title>
-    <link rel="stylesheet" href="style-pagamento.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pagamento - Lojas Pernambucanas</title>
+  <link rel="stylesheet" href="style-pagamento.css">
 </head>
 
 <body>
-    <header>
-        <div class="logo">
-            <img src="https://logodownload.org/wp-content/uploads/2014/07/pernambucanas-logo.png" alt="Lojas Pernambucanas">
-        </div>
-        <div class="progress-bar">
-        
-            <div class="step completed">Plano</div>
-            <div class="step completed">Pagamento</div>
-            <div class="step">Fim</div>
-        </div>
-    </header>
+  <header>
+    <div class="logo">
+      <img src="https://logodownload.org/wp-content/uploads/2014/07/pernambucanas-logo.png" alt="Lojas Pernambucanas">
+    </div>
+    <div class="progress-bar">
 
-    <main>
-        <div class="container">
-            <h1>Ótima Escolha!</h1>
-            <p class="subtitle">Finalize seu pagamento para garantir a proteção do seu produto com seu Cartão Pernambucanas.</p>
+      <div class="step completed">Plano</div>
+      <div class="step completed">Pagamento</div>
+      <div class="step">Fim</div>
+    </div>
+  </header>
 
-            <div class="payment-option" id="card-option">
-                <img src="cartaopnb.png" alt="Cartão Pernambucanas">
-                <h2>Cartão Pernambucanas</h2>
+  <main>
+    <div class="container">
+      <h1>Ótima Escolha!</h1>
+      <p class="subtitle">Finalize seu pagamento para garantir a proteção do seu produto com seu Cartão Pernambucanas.</p>
+
+      <div class="payment-option" id="card-option">
+        <img src="https://cdn-icons-png.flaticon.com/512/2695/2695969.png" alt="Cartão Pernambucanas">
+        <h2>Cartão Pernambucanas</h2>
+      </div>
+
+      <form action="confirmacao.html" method="post" class="payment-form" id="payment-form">
+        <fieldset>
+          <legend>Dados do Cartão</legend>
+          <div class="form-group">
+            <label for="card-number">Número do Cartão</label>
+            <input type="text" id="card-number" name="card-number" placeholder="1234 5678 9012 3456" required>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="card-holder">Nome no Cartão</label>
+              <input type="text" id="card-holder" name="card-holder" placeholder="Nome Completo" required>
             </div>
+            <div class="form-group">
+              <label for="expiry-date">Validade</label>
+              <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/AA" required>
+            </div>
+            <div class="form-group">
+              <label for="cvv">CVV</label>
+              <input type="text" id="cvv" name="cvv" placeholder="123" required>
+            </div>
+          </div>
+        </fieldset>
 
-            <form action="fim.html" method="post" class="payment-form" id="payment-form">
-                <fieldset>
-                    <legend>Dados do Cartão</legend>
-                    <div class="form-group">
-                        <label for="card-number">Número do Cartão</label>
-                        <input type="text" id="card-number" name="card-number" placeholder="1234 5678 9012 3456" required>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="card-holder">Nome no Cartão</label>
-                            <input type="text" id="card-holder" name="card-holder" placeholder="Nome Completo" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="expiry-date">Validade</label>
-                            <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/AA" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="cvv">CVV</label>
-                            <input type="text" id="cvv" name="cvv" placeholder="123" required>
-                        </div>
-                    </div>
-                </fieldset>
+        <fieldset>
+          <legend>Parcelamento</legend>
+          <div class="form-group">
+            <label for="installments">Escolha a opção de parcelamento:</label>
+            <select id="installments" name="installments" required>
+              <option value="1x">1x de R$ xx,xx</option>
+              <option value="2x">2x de R$ xx,xx</option>
+              <option value="3x">3x de R$ xx,xx</option>
+              <option value="10x">10x de R$ xx,xx</option>
+            </select>
+          </div>
+        </fieldset>
 
-                <fieldset>
-                    <legend>Parcelamento</legend>
-                    <div class="form-group">
-                        <label for="installments">Escolha a opção de parcelamento:</label>
-                        <select id="installments" name="installments" required>
-                            <option value="1x">1x de R$ 199,99</option>
-                            <option value="2x">2x de R$ 99,99</option>
-                            <option value="3x">3x de R$ 66,66</option>
-                            <option value="4x">4x de R$ 49,99</option>
-                        </select>
-                    </div>
-                </fieldset>
+        <div class="form-actions">
 
-                <div class="form-actions">
-                    <button type="submit" class="btn btn-primary">Pagar</button>
-                    <button type="button" class="btn btn-secondary">Voltar</button>
-                </div>
-            </form>
+          <a href="index.html" class="btn btn-secondary">Voltar</a>
+          
+          <a href="fim.html" class="btn btn-primary no-underline">Pagar</a>
+
         </div>
-    </main>
+      </form>
+    </div>
+  </main>
 
-    <footer>
-        <p>Precisa de ajuda? Contate nosso suporte pelo telefone (XX) XXXX-XXXX</p>
-    </footer>
+  <footer>
+    <p>Precisa de ajuda? Contate nosso suporte pelo telefone (XX) XXXX-XXXX</p>
+  </footer>
 
-    <script>
-        document.getElementById('card-option').addEventListener('click', function() {
-            document.getElementById('payment-form').style.display = 'block';
-        });
-    </script>
+  <script>
+    document.getElementById('card-option').addEventListener('click', function() {
+      document.getElementById('payment-form').style.display = 'block';
+    });
+  </script>
 </body>
 
 </html>
