@@ -8,78 +8,353 @@
     body {
       margin:0 !important;
       padding:0 !important;
-      background-color:#ffffff;
+      background:#f4f4f4;
       -webkit-text-size-adjust:100%;
       -ms-text-size-adjust:100%;
     }
-    table { border-collapse:collapse !important; }
-    img {
-      border:0;
-      outline:none;
-      text-decoration:none;
-      display:block;
-      height:auto;
-      line-height:100%;
-    }
+    table { border-collapse:collapse; border-spacing:0; }
+    img { border:0; outline:none; text-decoration:none; display:block; }
+    .wrapper { width:600px; max-width:600px; }
+    .mobile-stack { display:table-cell; }
+    .mobile-center { text-align:left; }
+    .step-box { border-radius:22px; }
     @media screen and (max-width:600px) {
-      .full-width { width:100% !important; max-width:600px !important; }
-      .fluid-img { width:100% !important; height:auto !important; }
+      .wrapper { width:100% !important; max-width:600px !important; }
+      .fluid { width:100% !important; height:auto !important; }
+      .mobile-pad { padding-left:22px !important; padding-right:22px !important; }
+      .mobile-stack { display:block !important; width:100% !important; }
+      .mobile-center { text-align:center !important; }
+      .mobile-full { width:100% !important; max-width:100% !important; }
+      .mobile-hide { display:none !important; }
+      .headline { font-size:27px !important; line-height:32px !important; }
+      .subheadline { font-size:22px !important; line-height:27px !important; }
+      .bodycopy { font-size:16px !important; line-height:22px !important; }
+      .step-copy { font-size:15px !important; line-height:19px !important; }
     }
   </style>
 </head>
 
 <body>
-  <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#FFFFFF">
-    <tr>
-      <td align="center" valign="top">
+<table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#f4f4f4">
+<tr>
+<td align="center" valign="top">
 
-        <table role="presentation" width="600" cellspacing="0" cellpadding="0" border="0" align="center" class="full-width">
-          <tr>
-            <td align="center" valign="top">
-              <custom type="header"/>
-            </td>
-          </tr>
+<table role="presentation" width="600" cellspacing="0" cellpadding="0" border="0" align="center" class="wrapper" bgcolor="#FFFFFF">
 
-          <tr>
-            <td align="center" valign="top" style="font-size:0; line-height:0;">
-              <img src="https://movatrademkt.github.io/assets_emailmkt_blackfriday_ceape/01-topo.jpg" width="600" alt="" border="0" class="fluid-img" style="width:600px; max-width:600px; height:auto;">
-            </td>
-          </tr>
+  <tr>
+    <td align="center" valign="top">
+      <custom type="header"/>
+    </td>
+  </tr>
 
-          <tr>
-            <td align="center" valign="top" style="font-size:0; line-height:0;">
-              <img src="https://movatrademkt.github.io/assets_emailmkt_blackfriday_ceape/02-conteudo.jpg" width="600" alt="" border="0" class="fluid-img" style="width:600px; max-width:600px; height:auto;">
-            </td>
-          </tr>
+  <!-- HERO -->
+  <tr>
+    <td align="center" style="font-size:0;line-height:0;">
+      <img src="https://movatrademkt.github.io/emailmktceapenovembro/assets/hero-black-friday-ceape.png"
+           width="600"
+           alt="Black Friday da Saúde. Consulta grátis em qualquer especialidade."
+           class="fluid"
+           style="width:600px;max-width:600px;height:auto;">
+    </td>
+  </tr>
 
-          <tr>
-            <td align="center" valign="top" style="font-size:0; line-height:0;">
-              <img src="https://movatrademkt.github.io/assets_emailmkt_blackfriday_ceape/03-conteudo.jpg" width="600" alt="" border="0" class="fluid-img" style="width:600px; max-width:600px; height:auto;">
-            </td>
-          </tr>
+  <!-- INTRO -->
+  <tr>
+    <td align="center" class="mobile-pad" style="padding:26px 46px 22px 46px;font-family:Arial,Helvetica,sans-serif;color:#111111;">
+      <div class="headline" style="font-size:29px;line-height:34px;font-weight:400;">
+        A <strong>Black Friday</strong> chegou!
+      </div>
+      <div class="bodycopy" style="font-size:16px;line-height:21px;padding-top:15px;">
+        Mas desta vez, o maior desconto não está nas<br class="mobile-hide">
+        vitrines: <strong>está no cuidado com a sua saúde!</strong>
+      </div>
+      <div class="bodycopy" style="font-size:16px;line-height:21px;padding-top:17px;">
+        Para incentivar o autocuidado, preparamos<br class="mobile-hide">
+        uma condição imperdível para você:
+      </div>
+    </td>
+  </tr>
 
-          <tr>
-            <td align="center" valign="top" style="font-size:0; line-height:0;">
-              <img src="https://movatrademkt.github.io/assets_emailmkt_blackfriday_ceape/04-rodape.jpg" width="600" alt="" border="0" class="fluid-img" style="width:600px; max-width:600px; height:auto;">
-            </td>
-          </tr>
+  <!-- OFERTA -->
+  <tr>
+    <td bgcolor="#444444" align="center" class="mobile-pad" style="padding:24px 30px 24px 30px;background:linear-gradient(90deg,#606060,#222222);font-family:Arial,Helvetica,sans-serif;color:#FFFFFF;">
+      <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
+        <tr>
+          <td width="90" valign="middle" align="center" style="font-family:Arial,Helvetica,sans-serif;font-size:72px;line-height:72px;font-weight:700;color:#FFFFFF;">
+            1
+          </td>
+          <td valign="middle" align="left" class="mobile-center" style="font-family:Arial,Helvetica,sans-serif;color:#FFFFFF;">
+            <div style="font-size:22px;line-height:24px;font-weight:300;">Consulta Presencial&nbsp;&nbsp;com <strong>qualquer</strong></div>
+            <div style="font-size:40px;line-height:42px;font-weight:700;"><strong>GRATUITA</strong> <span style="font-size:27px;">especialidade</span></div>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
 
-          <tr>
-            <td align="center" valign="middle" style="font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:16px;color:#000000;padding:16px 10px 20px 10px;">
-              Caso não queira mais receber este e-mail,
-              <a href="%%unsub_center_url%%" target="_blank" style="color:#000000;text-decoration:underline;">acesse aqui</a>.
-            </td>
-          </tr>
+  <!-- EXPLICAÇÃO -->
+  <tr>
+    <td align="center" class="mobile-pad" style="padding:28px 42px 22px 42px;font-family:Arial,Helvetica,sans-serif;color:#161616;">
+      <div class="bodycopy" style="font-size:16px;line-height:21px;">
+        É isso mesmo que você entendeu! Com esse benefício exclusivo,<br class="mobile-hide">
+        você pode escolher a especialidade médica e realizar uma consulta<br class="mobile-hide">
+        sem pagar nada!
+      </div>
+      <div class="bodycopy" style="font-size:16px;line-height:21px;padding-top:17px;">
+        Seja para colocar os exames em dia, esclarecer uma dúvida, iniciar um<br class="mobile-hide">
+        tratamento ou fazer um acompanhamento, este é o momento ideal<br class="mobile-hide">
+        para cuidar de você.
+      </div>
+    </td>
+  </tr>
 
-          <tr>
-            <td align="center" valign="top">
-              <custom name="opencounter" type="tracking"/>
-            </td>
-          </tr>
-        </table>
+  <!-- COMO AGENDAR -->
+  <tr>
+    <td class="mobile-pad" style="padding:0 48px 22px 48px;">
+      <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
+        <tr>
+          <td align="center" style="border:1px solid #111111;border-radius:28px;padding:10px 16px;font-family:Arial,Helvetica,sans-serif;font-size:18px;line-height:22px;font-weight:700;">
+            Como agendar?
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
 
-      </td>
-    </tr>
-  </table>
+  <!-- PASSO 1 -->
+  <tr>
+    <td class="mobile-pad" style="padding:0 48px 8px 48px;">
+      <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#cbbba4" style="border-radius:24px;">
+        <tr>
+          <td width="46" align="center" valign="middle" style="padding:9px 4px 9px 14px;">
+            <div style="width:25px;height:25px;border:1px solid #235744;border-radius:50%;font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:25px;color:#235744;">1</div>
+          </td>
+          <td class="step-copy" style="padding:9px 16px 9px 4px;font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:19px;color:#171717;">
+            No menu inicial, clique em <strong>Agendar;</strong>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+
+  <!-- PASSO 2 -->
+  <tr>
+    <td class="mobile-pad" style="padding:0 48px 8px 48px;">
+      <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#cbbba4" style="border-radius:24px;">
+        <tr>
+          <td width="46" align="center" valign="middle" style="padding:9px 4px 9px 14px;">
+            <div style="width:25px;height:25px;border:1px solid #235744;border-radius:50%;font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:25px;color:#235744;">2</div>
+          </td>
+          <td class="step-copy" style="padding:9px 16px 9px 4px;font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:19px;color:#171717;">
+            Acesse <strong>Consulta Médica</strong> e selecione<br>
+            <strong>a especialidade</strong> desejada;
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+
+  <!-- PASSO 3 -->
+  <tr>
+    <td class="mobile-pad" style="padding:0 48px 8px 48px;">
+      <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#cbbba4" style="border-radius:24px;">
+        <tr>
+          <td width="46" align="center" valign="middle" style="padding:9px 4px 9px 14px;">
+            <div style="width:25px;height:25px;border:1px solid #235744;border-radius:50%;font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:25px;color:#235744;">3</div>
+          </td>
+          <td class="step-copy" style="padding:9px 16px 9px 4px;font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:19px;color:#171717;">
+            Informe sua localização e escolha a clínica de sua preferência;
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+
+  <!-- PASSO 4 -->
+  <tr>
+    <td class="mobile-pad" style="padding:0 48px 8px 48px;">
+      <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#cbbba4" style="border-radius:24px;">
+        <tr>
+          <td width="46" align="center" valign="top" style="padding:15px 4px 6px 14px;">
+            <div style="width:25px;height:25px;border:1px solid #235744;border-radius:50%;font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:25px;color:#235744;">4</div>
+          </td>
+          <td class="step-copy" style="padding:13px 16px 7px 4px;font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:19px;color:#171717;">
+            Escolha entre <strong>agendar diretamente com a<br class="mobile-hide"> clínica ou solicitar a TEM Saúde agende para<br class="mobile-hide"> você;</strong>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" style="padding:0 6px 8px 6px;">
+            <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
+              <tr>
+                <td width="49%" valign="top" class="mobile-stack" bgcolor="#235744" style="border-radius:16px;padding:12px 12px;font-family:Arial,Helvetica,sans-serif;color:#FFFFFF;text-align:center;">
+                  <div style="font-size:13px;line-height:16px;font-weight:700;">Agendamento por conta própria:</div>
+                  <div style="font-size:12px;line-height:16px;padding-top:4px;">
+                    entre em contato com a clínica<br>
+                    pelo telefone ou WhatsApp<br>
+                    informado na tela;
+                  </div>
+                </td>
+                <td width="2%" class="mobile-stack" style="font-size:1px;line-height:1px;">&nbsp;</td>
+                <td width="49%" valign="top" class="mobile-stack" bgcolor="#235744" style="border-radius:16px;padding:12px 12px;font-family:Arial,Helvetica,sans-serif;color:#FFFFFF;text-align:center;">
+                  <div style="font-size:13px;line-height:16px;font-weight:700;">Agendamento pela TEM Saúde:</div>
+                  <div style="font-size:12px;line-height:16px;padding-top:4px;">
+                    escolha o dia e o horário desejados,<br>
+                    confirme as informações e clique<br>
+                    em Concluir para enviar sua solicitação;
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+
+  <!-- PASSO 5 -->
+  <tr>
+    <td class="mobile-pad" style="padding:0 48px 24px 48px;">
+      <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#cbbba4" style="border-radius:24px;">
+        <tr>
+          <td width="46" align="center" valign="middle" style="padding:9px 4px 9px 14px;">
+            <div style="width:25px;height:25px;border:1px solid #235744;border-radius:50%;font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:25px;color:#235744;">5</div>
+          </td>
+          <td class="step-copy" style="padding:9px 16px 9px 4px;font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:19px;color:#171717;">
+            <strong>Pronto!</strong> Em breve, você receberá todos os<br class="mobile-hide">
+            detalhes do seu agendamento por WhatsApp.
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+
+  <!-- CHAMADA -->
+  <tr>
+    <td align="center" bgcolor="#173e50" class="mobile-pad" style="padding:23px 35px 22px 35px;font-family:Arial,Helvetica,sans-serif;color:#FFFFFF;">
+      <div class="subheadline" style="font-size:22px;line-height:27px;font-weight:700;">
+        Não deixe essa oportunidade passar!
+      </div>
+      <div style="font-size:15px;line-height:20px;padding-top:8px;">
+        Agende agora a sua consulta gratuita e aproveite a Black Friday<br class="mobile-hide">
+        da Saúde para cuidar do seu bem-estar.
+      </div>
+    </td>
+  </tr>
+
+  <!-- APP -->
+  <tr>
+    <td bgcolor="#eef3f6" class="mobile-pad" style="padding:38px 34px 0 34px;">
+      <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
+        <tr>
+          <td colspan="2" align="center" style="font-family:Arial,Helvetica,sans-serif;color:#173e50;padding-bottom:22px;">
+            <div class="subheadline" style="font-size:25px;line-height:30px;font-weight:700;">Ainda não tem o TEM Saúde Digital?</div>
+            <div style="font-size:16px;line-height:21px;padding-top:4px;">
+              Baixe o app e comece a acompanhar sua saúde<br class="mobile-hide">
+              de forma simples, prática e contínua.
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td width="42%" valign="bottom" align="center" class="mobile-stack">
+            <img src="https://movatrademkt.github.io/emailmktceapenovembro/assets/app-smartphone.png"
+                 width="205"
+                 alt=""
+                 class="mobile-full"
+                 style="width:205px;max-width:205px;height:auto;">
+          </td>
+          <td width="58%" valign="top" class="mobile-stack" style="padding:10px 0 22px 18px;">
+            <table role="presentation" cellspacing="0" cellpadding="0" border="0" class="mobile-full">
+              <tr>
+                <td style="padding-bottom:14px;">
+                  <table role="presentation" cellspacing="0" cellpadding="0" border="0">
+                    <tr>
+                      <td style="padding-right:8px;">
+                        <img src="https://movatrademkt.github.io/emailmktceapenovembro/assets/google-play.png" width="128" alt="Disponível no Google Play" style="width:128px;max-width:128px;height:auto;">
+                      </td>
+                      <td>
+                        <img src="https://movatrademkt.github.io/emailmktceapenovembro/assets/app-store.png" width="128" alt="Disponível na App Store" style="width:128px;max-width:128px;height:auto;">
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td style="font-family:Arial,Helvetica,sans-serif;color:#173e50;font-size:16px;line-height:21px;padding-bottom:12px;">
+                  ✉ &nbsp;Informe seu <strong>CPF</strong> e<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>TOKEN</strong> recebido via SMS;
+                </td>
+              </tr>
+              <tr>
+                <td style="font-family:Arial,Helvetica,sans-serif;color:#173e50;font-size:16px;line-height:21px;padding-bottom:12px;">
+                  *** &nbsp;Crie uma <strong>nova senha;</strong>
+                </td>
+              </tr>
+              <tr>
+                <td style="font-family:Arial,Helvetica,sans-serif;color:#173e50;font-size:16px;line-height:21px;font-weight:700;">
+                  ○✓ &nbsp;Só começar a usar!
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+
+  <!-- CENTRAL -->
+  <tr>
+    <td align="center" bgcolor="#173e50" class="mobile-pad" style="padding:34px 35px 33px 35px;font-family:Arial,Helvetica,sans-serif;color:#FFFFFF;">
+      <div style="font-size:17px;line-height:21px;">Ficou com dúvidas?</div>
+      <div class="subheadline" style="font-size:26px;line-height:30px;font-weight:700;">Ligue para a Central de Atendimento!</div>
+      <div style="font-size:12px;line-height:17px;">Disponível de segunda a sexta, das 7h às 19h</div>
+
+      <div style="padding-top:18px;">
+        <a href="tel:40001640" style="font-family:Arial,Helvetica,sans-serif;color:#FFFFFF;text-decoration:none;font-size:29px;line-height:31px;font-weight:700;">4000 1640</a>
+        <div style="font-size:11px;line-height:15px;">Capitais e regiões metropolitanas</div>
+      </div>
+
+      <div style="padding-top:12px;">
+        <a href="tel:08008368836" style="font-family:Arial,Helvetica,sans-serif;color:#FFFFFF;text-decoration:none;font-size:29px;line-height:31px;font-weight:700;">0800 836 8836</a>
+        <div style="font-size:11px;line-height:15px;">Para demais regiões</div>
+      </div>
+    </td>
+  </tr>
+
+  <!-- LEGAL -->
+  <tr>
+    <td align="left" bgcolor="#f2f2f2" class="mobile-pad" style="padding:26px 42px 20px 42px;font-family:Arial,Helvetica,sans-serif;font-size:9px;line-height:12px;color:#161616;">
+      <div>
+        ¹ Válido somente para o titular, contemplando 1 consulta. Consulte o regulamento em: meutem.com.br/blackfriday-2026. A ação é válida para novas contratações de 03/11/26 a 31/11/26.
+      </div>
+      <div style="padding-top:10px;">
+        A TEM Saúde é um programa de saúde particular, não sendo seguro ou plano de saúde. Não oferece cobertura para internação, urgências, emergências ou cirurgias. Campanhas e promoções podem ser criadas, alteradas ou encerradas a qualquer momento. Consulte as condições do seu produto no regulamento disponível no aplicativo TEM Saúde Digital.
+      </div>
+      <div style="padding-top:10px;">
+        Ao utilizar o aplicativo, você concorda com a coleta e uso de dados pessoais, inclusive sensíveis, pela TEM Saúde, parceiros e terceiros autorizados, conforme a Política de Privacidade. Esses dados podem ser usados para melhoria dos serviços, personalização de ofertas e cumprimento de obrigações legais.
+      </div>
+      <div style="padding-top:10px;">
+        Produto administrado por TEM Saúde – CNPJ 09.216.007/0001-10. Av. Pres. Juscelino Kubitschek, 1830, Torre 4, 14º andar, São Paulo/SP.
+      </div>
+    </td>
+  </tr>
+
+  <!-- DESCADASTRO -->
+  <tr>
+    <td align="center" style="padding:12px 20px 18px 20px;font-family:Arial,Helvetica,sans-serif;font-size:11px;line-height:15px;color:#000000;">
+      Caso não queira mais receber este e-mail,
+      <a href="%%unsub_center_url%%" target="_blank" style="color:#000000;text-decoration:underline;">acesse aqui</a>.
+    </td>
+  </tr>
+
+  <tr>
+    <td align="center" valign="top">
+      <custom name="opencounter" type="tracking"/>
+    </td>
+  </tr>
+
+</table>
+</td>
+</tr>
+</table>
 </body>
 </html>
